@@ -1,0 +1,15 @@
+<form action="<?php echo $this->escape($this->element->getAction()) ?>" method="<?php echo $this->escape($this->element->getMethod()) ?>" id="<?php echo $this->element->getId(); ?>">
+
+<?php echo $this->element->identifier; ?>
+
+<div class="form-group <?php echo $this->element->email->getId();?>">
+<label for="<?php echo $this->element->email->getId();?>"><?php echo $this->element->email->getLabel(); ?></label>
+<?php echo $this->element->email;?>
+</div>
+
+<div class="form-group <?php echo $this->element->submitform->getId();?>">
+<span class="pull-right"><?php echo $this->element->submitform; ?></span>
+</div>
+
+
+</form>
